@@ -106,7 +106,6 @@ export function EarlyAccessForm() {
                   label="LinkedIn Profile (Optional)"
                   type="url"
                   placeholder="https://www.linkedin.com/in/yourprofile"
-                   
                 />
 
                 <div className="space-y-2">
