@@ -32,7 +32,7 @@ const SignalPostPage = ({ signal: slug }: Props) => {
     <main className="min-h-screen bg-black text-zinc-50 selection:bg-zinc-800 selection:text-white">
        
       <article className="pt-32 pb-24 px-6 md:px-12">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div initial={{
           opacity: 0,
