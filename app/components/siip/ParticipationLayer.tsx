@@ -1,20 +1,26 @@
 "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 export function ParticipationLayer() {
-  return <section className="px-6 py-24 md:px-12 lg:px-24 border-b border-zinc-900 bg-zinc-950/30">
+  return (
+    <section className="px-6 py-24 md:px-12 lg:px-24 border-b border-zinc-900 bg-zinc-950/30">
       <div className="max-w-7xl mx-auto">
-        <motion.div initial={{
-        opacity: 0,
-        y: 20
-      }} whileInView={{
-        opacity: 1,
-        y: 0
-      }} viewport={{
-        once: true
-      }} transition={{
-        duration: 0.8
-      }}>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+        >
           <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest block mb-8">
             The Layer
           </span>
@@ -46,5 +52,6 @@ export function ParticipationLayer() {
           </div>
         </motion.div>
       </div>
-    </section>;
+    </section>
+  );
 }

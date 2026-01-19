@@ -1,16 +1,16 @@
-import React from 'react'
-import { Navigation } from '../components/siip/Navigation'
-import { Footer } from '../components/siip/Footer'
-import DoctrineSection from '../components/siip/DoctrineSection'
+import React from "react";
+import { Navigation } from "../components/siip/Navigation";
+import { Footer } from "../components/siip/Footer";
+import DoctrineSection from "../components/siip/DoctrineSection";
 
 const page = () => {
-    return (
-        <div className='bg-black text-white'>
-            <Navigation />
-            <DoctrineSection />
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <div className="bg-black text-white">
+      <Navigation />
+      <DoctrineSection />
+      <Footer />
+    </div>
+  );
+};
 
-export default page
+export default page;
