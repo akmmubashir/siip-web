@@ -1,12 +1,13 @@
 import React from 'react'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import { Navigation } from '../components/siip/Navigation'
+import { Footer } from '../components/siip/Footer'
+import SignalsPageSection from '../components/siip/SignalsPageSection'
 
 const page = () => {
     return (
-        <div>
-            <Header />
-            <div>page</div>
+        <div className='bg-black text-white'>
+            <Navigation />
+            <SignalsPageSection />
             <Footer />
         </div>
     )

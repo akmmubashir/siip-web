@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '../ui/Button';
@@ -6,6 +7,7 @@ import { CheckCircle2 } from 'lucide-react';
 export function EarlyAccessForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedRole, setSelectedRole] = useState("select");
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -28,7 +30,7 @@ export function EarlyAccessForm() {
         duration: 0.6
       }} className="text-center mb-12">
           <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest block mb-4">
-            Section 05 — Access
+            Access
           </span>
           <h2 className="text-3xl font-medium text-white mb-4">
             Request Early Access
@@ -73,8 +75,8 @@ export function EarlyAccessForm() {
                   <label className="text-xs font-medium text-zinc-400 uppercase tracking-wider">
                     I am a
                   </label>
-                  <select className="flex h-12 w-full border border-zinc-800 bg-zinc-950 px-4 py-2 text-sm text-zinc-100 ring-offset-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-500 transition-all duration-200" required>
-                    <option value="" disabled selected>
+                  <select value={selectedRole} onChange={(e) => setSelectedRole(e.target.value)} className="flex h-12 w-full border border-zinc-800 bg-zinc-950 px-4 py-2 text-sm text-zinc-100 ring-offset-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-500 transition-all duration-200" required>
+                    <option value="select" disabled>
                       Select your role
                     </option>
                     <option value="merchant">Merchant</option>

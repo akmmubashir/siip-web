@@ -1,8 +1,15 @@
 import React from 'react'
+import { Navigation } from '../components/siip/Navigation'
+import { Footer } from '../components/siip/Footer'
+import DoctrineSection from '../components/siip/DoctrineSection'
 
 const page = () => {
     return (
-        <div>page</div>
+        <div className='bg-black text-white'>
+            <Navigation />
+            <DoctrineSection />
+            <Footer />
+        </div>
     )
 }
 

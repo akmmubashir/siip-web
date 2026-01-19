@@ -5,7 +5,7 @@ import { HeroSection } from '../components/siip/HeroSection'
 import { WhatSIIPIs } from '../components/siip/WhatSIIPIs'
 import { ParticipationLayer } from '../components/siip/ParticipationLayer'
 import { SignalsSection } from '../components/siip/SignalsSection'
-// import { EarlyAccessForm } from '../components/siip/EarlyAccessForm'
+import { EarlyAccessForm } from '../components/siip/EarlyAccessForm'
 
 const HomePage = () => {
     return (
@@ -15,7 +15,7 @@ const HomePage = () => {
             <WhatSIIPIs />
             <ParticipationLayer />
             <SignalsSection />
-            {/* <EarlyAccessForm /> */}
+            <EarlyAccessForm />
             <Footer />
         </div>
     )

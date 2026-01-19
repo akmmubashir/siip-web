@@ -19,7 +19,7 @@ export function Navigation({
     duration: 0.6
   }} className="fixed top-0 left-0 right-0 z-50 px-6 py-6 bg-black/80 backdrop-blur-sm border-b border-zinc-900">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-sm font-bold tracking-tighter hover:text-zinc-300 transition-colors">
+        <Link href="/" className="text-lg font-semibold tracking-tighter hover:text-zinc-300 transition-colors">
           SIIP
         </Link>
         <div className="flex items-center gap-6 md:gap-8">
