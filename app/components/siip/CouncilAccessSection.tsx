@@ -1,11 +1,12 @@
+"use client";
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Navigation } from '../components/siip/Navigation';
-import { Footer } from '../components/siip/Footer';
-import { Button } from '../components/ui/Button';
-import { Input } from '../components/ui/Input';
+import { motion, AnimatePresence } from 'framer-motion'; 
 import { Shield, CheckCircle2 } from 'lucide-react';
-export function CouncilAccessPage() {
+import Link from 'next/link';
+import { Input } from '../ui/Input';
+import { Button } from '../ui/Button';
+
+const CouncilAccessSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleSubmit = async (e: React.FormEvent) => {
@@ -16,11 +17,12 @@ export function CouncilAccessPage() {
     setIsSubmitting(false);
     setIsSubmitted(true);
   };
-  return <main className="min-h-screen bg-black text-zinc-50 selection:bg-zinc-800 selection:text-white">
-      <Navigation />
+  return (
+    <main className="min-h-screen bg-black text-zinc-50 selection:bg-zinc-800 selection:text-white">
+ 
 
-      <div className="min-h-screen flex items-center justify-center px-6 py-24">
-        <div className="max-w-lg w-full">
+      <div className="min-h-screen flex items-center justify-center px-6 py-26">
+        <div className="max-w-xl w-full">
           <motion.div initial={{
           opacity: 0,
           y: 20
@@ -39,7 +41,7 @@ export function CouncilAccessPage() {
               Council Access
             </h1>
 
-            <div className="max-w-md mx-auto space-y-4">
+            <div className="mx-auto space-y-4">
               <p className="text-lg text-zinc-400 leading-relaxed">
                 The SIIP Council is an invitation-led body responsible for
                 preserving the doctrine, integrity, and institutional alignment
@@ -100,7 +102,7 @@ export function CouncilAccessPage() {
 
                   <div className="relative">
                     <Input label="Invitation Code" placeholder="Enter your invitation code" className="font-mono tracking-wider" required />
-                    <div className="absolute right-4 top-[42px] pointer-events-none">
+                    <div className="absolute right-4 top-10.5 pointer-events-none">
                       <Shield className="h-4 w-4 text-zinc-700" />
                     </div>
                   </div>
@@ -128,14 +130,16 @@ export function CouncilAccessPage() {
         }} className="text-center mt-8">
             <p className="text-xs text-zinc-600">
               Do not have an invitation?{' '}
-              <a href="/#early-access" className="text-zinc-500 hover:text-zinc-300 transition-colors underline">
+              <Link href="/#early-access" className="text-zinc-500 hover:text-zinc-300 transition-colors underline">
                 Request early access
-              </a>
+              </Link>
             </p>
           </motion.div>
         </div>
       </div>
-
-      <Footer />
-    </main>;
+ 
+    </main>
+  )
 }
+
+export default CouncilAccessSection

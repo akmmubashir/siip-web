@@ -29,9 +29,9 @@ export function Navigation({
           <Link href="/signals" className={`text-xs font-mono transition-colors ${currentPath === '/signals' ? 'text-white' : 'text-zinc-500 hover:text-zinc-300'}`}>
             SIGNALS
           </Link>
-          <div className="text-xs font-mono text-zinc-600 hidden sm:block">
+          {/* <div className="text-xs font-mono text-zinc-600 hidden sm:block">
             INFRASTRUCTURE LAYER
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.nav>;

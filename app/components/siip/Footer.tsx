@@ -49,7 +49,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pt-8">
           <p className="text-xs text-zinc-700">
-            © {new Date().getFullYear()} SIIP Infrastructure. All rights
+            © {new Date().getFullYear()} SIIP. All rights
             reserved.
           </p>
           <div className="flex gap-6">
