@@ -102,6 +102,12 @@ export function EarlyAccessForm() {
                   placeholder="name@organization.com"
                   required
                 />
+                <Input
+                  label="LinkedIn Profile (Optional)"
+                  type="url"
+                  placeholder="https://www.linkedin.com/in/yourprofile"
+                   
+                />
 
                 <div className="space-y-2">
                   <label className="text-xs font-medium text-zinc-400 uppercase tracking-wider">
