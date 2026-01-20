@@ -37,7 +37,7 @@ const DoctrineSection = () => {
               Doctrine
             </h1>
             <p className="text-xl md:text-2xl text-zinc-500 font-light">
-              The Incentivised Economy Layer
+              The Participation Infrastructure Layer
             </p>
           </motion.div>
 
