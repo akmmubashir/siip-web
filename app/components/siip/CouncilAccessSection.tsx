@@ -46,7 +46,7 @@ const CouncilAccessSection = () => {
 
             <div className="mx-auto space-y-4">
               <p className="text-lg text-zinc-400 leading-relaxed">
-                The SIIP Council is an invitation-led body responsible for
+                The SIIPs Council is an invitation-led body responsible for
                 preserving the doctrine, integrity, and institutional alignment
                 of the participation layer.
               </p>

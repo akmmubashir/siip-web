@@ -39,7 +39,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white leading-[1.1]">
-            SIIP - Participation <br className="hidden lg:block" />
+            SIIPs - Participation <br className="hidden lg:block" />
             <span className="text-zinc-500">Infrastructure Layer</span>
           </h1>
 

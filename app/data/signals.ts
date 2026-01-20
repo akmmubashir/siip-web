@@ -20,7 +20,7 @@ When transactions end value, individuals lose position. When participation disap
 
 Participation cannot remain a behavioural tool. It must become infrastructure.
 
-This is the premise on which SIIP is being built.`,
+This is the premise on which SIIPs is being built.`,
   },
   {
     id: "2",

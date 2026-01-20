@@ -31,7 +31,7 @@ export function ParticipationLayer() {
 
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed mb-8">
-              SIIP establishes a verified participation layer above everyday
+              SIIPs establishes a verified participation layer above everyday
               transactions. Each eligible transaction becomes a participation
               event, creating measurable economic presence for individuals and
               retention strength for merchants without interfering with payment,

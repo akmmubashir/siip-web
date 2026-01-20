@@ -59,7 +59,7 @@ const DoctrineSection = () => {
             className="space-y-8 mb-20"
           >
             <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
-              SIIP exists to institutionalise participation as infrastructure.
+              SIIPs exists to institutionalise participation as infrastructure.
               Modern economies move capital efficiently, yet they fail to return
               structural position to the individuals who generate economic flow.
             </p>
@@ -91,7 +91,7 @@ const DoctrineSection = () => {
             className="mb-20"
           >
             <p className="text-lg md:text-xl text-zinc-300 leading-relaxed mb-12">
-              SIIP is built on five non-negotiable principles:
+              SIIPs is built on five non-negotiable principles:
             </p>
 
             <div className="space-y-8">

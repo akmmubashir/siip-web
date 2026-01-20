@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const blocks = [
   {
     title: "Infrastructure, not a platform",
-    text: "SIIP is not a loyalty program, not a marketing system, and not a payment layer. We are building participation as economic infrastructure.",
+    text: "SIIPs is not a loyalty program, not a marketing system, and not a payment layer. We are building participation as economic infrastructure.",
   },
   {
     title: "Position, not perks",

@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Left Column - Branding */}
           <div>
-            <h3 className="text-sm font-bold tracking-tighter mb-2">SIIP</h3>
+            <h3 className="text-sm font-bold tracking-tighter mb-2">SIIPs</h3>
             <p className="text-sm text-zinc-500">
               Participation Infrastructure Layer
             </p>
@@ -51,7 +51,7 @@ export function Footer() {
         {/* Disclaimer */}
         <div className="pt-8 border-t border-zinc-900">
           <p className="text-xs text-zinc-600 leading-relaxed max-w-3xl">
-            SIIP does not process payments, store funds, or interfere with
+            SIIPs does not process payments, store funds, or interfere with
             settlement or tax collection.
           </p>
         </div>
@@ -59,7 +59,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pt-8">
           <p className="text-xs text-zinc-700">
-            © {new Date().getFullYear()} SIIP. All rights reserved.
+            © {new Date().getFullYear()} SIIPs. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
