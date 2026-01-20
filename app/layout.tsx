@@ -8,11 +8,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SIIP - The Participation Infrastructure Layer",
+  title: "SIIPs - The Participation Infrastructure Layer",
   description:
-    "SIIP is building the participation infrastructure layer - converting verified transactions into participation identity, merchant retention strength, and long-term circulation, without touching settlement or tax",
+    "SIIPs is building the participation infrastructure layer - converting verified transactions into participation identity, merchant retention strength, and long-term circulation, without touching settlement or tax",
   keywords: [
-    "SIIP",
+    "SIIPs",
     "Participation Infrastructure",
     "Bitcoin",
     "Merchant Retention",
@@ -33,20 +33,20 @@ export const metadata: Metadata = {
     canonical: "https://siip-web.vercel.app",
   },
   openGraph: {
-    title: "SIIP - The Participation Infrastructure Layer",
+    title: "SIIPs - The Participation Infrastructure Layer",
     description:
-      "SIIP is building the participation infrastructure layer - converting verified transactions into participation identity, merchant retention strength, and long-term circulation, without touching settlement or tax",
+      "SIIPs is building the participation infrastructure layer - converting verified transactions into participation identity, merchant retention strength, and long-term circulation, without touching settlement or tax",
     url: "https://siip-web.vercel.app",
-    siteName: "SIIP",
+    siteName: "SIIPs",
     images: "/siip.png",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SIIP - The Participation Infrastructure Layer",
+    title: "SIIPs - The Participation Infrastructure Layer",
     description:
-      "SIIP is building the participation infrastructure layer - converting verified transactions into participation identity, merchant retention strength, and long-term circulation, without touching settlement or tax",
+      "SIIPs is building the participation infrastructure layer - converting verified transactions into participation identity, merchant retention strength, and long-term circulation, without touching settlement or tax",
     images: ["/siip.png"],
   },
   robots: {

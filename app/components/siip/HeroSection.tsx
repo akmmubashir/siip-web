@@ -34,19 +34,19 @@ export function HeroSection() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             <span className="text-xs font-mono text-zinc-400 tracking-tight">
-              LAUNCHING SOON — INVITATION ONLY
+              LAUNCHING SOON - INVITATION ONLY
             </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight text-white leading-[1.1]">
-            SIIP — Participation <br className="hidden lg:block" />
+            SIIP - Participation <br className="hidden lg:block" />
             <span className="text-zinc-500">Infrastructure Layer</span>
           </h1>
 
           <p className="max-w-2xl text-lg md:text-xl text-zinc-400 leading-relaxed font-light">
             A structural initiative to convert verified transactions into
             participation identity, merchant retention strength, and long-term
-            circulation—without touching settlement or tax.
+            circulation-without touching settlement or tax.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-8">

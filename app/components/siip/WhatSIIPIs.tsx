@@ -12,7 +12,7 @@ const blocks = [
   },
   {
     title: "Retention, not discounting",
-    text: "Merchants do not run campaigns. They gain retention infrastructure and participation-based reputation.",
+    text: "Merchants do not run campaigns. They gain retention infrastructure and participation based reputation.",
   },
 ];
 export function WhatSIIPIs() {

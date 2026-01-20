@@ -34,7 +34,7 @@ export function ParticipationLayer() {
               SIIP establishes a verified participation layer above everyday
               transactions. Each eligible transaction becomes a participation
               event, creating measurable economic presence for individuals and
-              retention strength for merchants—without interfering with payment,
+              retention strength for merchants without interfering with payment,
               settlement, or tax collection.
             </p>
             <p className="text-lg text-zinc-500 leading-relaxed">

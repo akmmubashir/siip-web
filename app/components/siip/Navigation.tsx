@@ -27,7 +27,7 @@ export function Navigation({ currentPath = "/" }: NavigationProps) {
           href="/"
           className="text-lg font-semibold tracking-tighter hover:text-zinc-300 transition-colors"
         >
-          SIIP
+          SIIPs
         </Link>
         <div className="flex items-center gap-6 md:gap-8">
           <Link

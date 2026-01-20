@@ -149,7 +149,7 @@ const DoctrineSection = () => {
               We are designing a participation layer: an economic architecture
               where every verified transaction becomes a participation event,
               where merchants gain retention infrastructure, and where
-              individuals gain visible economic presence— without financial
+              individuals gain visible economic presence without financial
               manipulation, without consumer fees, and without interference in
               settlement or tax.
             </p>
