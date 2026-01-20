@@ -25,9 +25,9 @@ export function EarlyAccessForm() {
     ): React.ChangeEventHandler<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     > =>
-      (e) => {
-        setFormData((prev) => ({ ...prev, [key]: e.target.value }));
-      };
+    (e) => {
+      setFormData((prev) => ({ ...prev, [key]: e.target.value }));
+    };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -97,10 +97,13 @@ export function EarlyAccessForm() {
             Founding Partner Interest
           </h2>
           <p className="text-zinc-400">
-            SIIPs is forming its initial ecosystem of Founding Participation Partners.<br />
-            This program is designed for businesses, operators, and institutions who wish
-            to participate in the creation of a new economic infrastructure layer focused
-            on participation, retention, and long-term circulation.
+            SIIPs is forming its initial ecosystem of Founding Participation
+            Partners.
+            <br />
+            This program is designed for businesses, operators, and institutions
+            who wish to participate in the creation of a new economic
+            infrastructure layer focused on participation, retention, and
+            long-term circulation.
             <br />
             Participation is selective and alignment-led
           </p>
