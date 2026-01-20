@@ -25,9 +25,9 @@ export function EarlyAccessForm() {
     ): React.ChangeEventHandler<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     > =>
-      (e) => {
-        setFormData((prev) => ({ ...prev, [key]: e.target.value }));
-      };
+    (e) => {
+      setFormData((prev) => ({ ...prev, [key]: e.target.value }));
+    };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -114,18 +114,32 @@ export function EarlyAccessForm() {
                   opacity: 1,
                   scale: 1,
                 }}
-                className="flex flex-col items-center justify-center text-center py-12"
+                className="flex flex-col items-center justify-center py-12"
               >
                 <div className="h-16 w-16 bg-zinc-900 rounded-full flex items-center justify-center mb-6">
                   <CheckCircle2 className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-medium text-white mb-2">
+                <h3 className="text-xl font-medium text-white mb-4 text-center">
                   Request Received
                 </h3>
-                <p className="text-zinc-400 max-w-xs mx-auto">
-                  Thank you. If aligned, you will receive access instructions
-                  via email.
-                </p>
+                <div>
+                  <p className="text-zinc-400 text-center text-lg max-md:text-sm">
+                    Thank you for your interest in participating as a Founding
+                    Partner of SIIPs.
+                    <br />
+                    <br />
+                    Your submission has been received and will be reviewed by
+                    the SIIPs foundation team.
+                    <br />
+                    If aligned, you will be contacted for a follow-up
+                    conversation regarding partnership positioning and next
+                    steps.
+                    <br />
+                    <br />
+                    SIIPs is building infrastructure, not a platform.
+                    Participation is selective by design.
+                  </p>
+                </div>
               </motion.div>
             ) : (
               <motion.form
@@ -276,17 +290,22 @@ export function EarlyAccessForm() {
                         >
                           Select scale
                         </option>
-                        {["Single outlet / small business", "Multi-outlet / local group", "Regional group", "National enterprise", "Platform / network", "Other"].map(
-                          (interest) => (
-                            <option
-                              key={interest}
-                              value={interest}
-                              className="bg-black! text-white! capitalize!"
-                            >
-                              {interest}
-                            </option>
-                          ),
-                        )}
+                        {[
+                          "Single outlet / small business",
+                          "Multi-outlet / local group",
+                          "Regional group",
+                          "National enterprise",
+                          "Platform / network",
+                          "Other",
+                        ].map((interest) => (
+                          <option
+                            key={interest}
+                            value={interest}
+                            className="bg-black! text-white! capitalize!"
+                          >
+                            {interest}
+                          </option>
+                        ))}
                       </select>
                     </div>
                   </div>
