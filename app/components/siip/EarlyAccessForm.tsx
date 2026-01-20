@@ -25,9 +25,9 @@ export function EarlyAccessForm() {
     ): React.ChangeEventHandler<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     > =>
-    (e) => {
-      setFormData((prev) => ({ ...prev, [key]: e.target.value }));
-    };
+      (e) => {
+        setFormData((prev) => ({ ...prev, [key]: e.target.value }));
+      };
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -91,14 +91,18 @@ export function EarlyAccessForm() {
           className="text-center mb-12"
         >
           <span className="text-xs font-mono text-zinc-500 uppercase tracking-widest block mb-4">
-            Access
+            Join the formation of the Participation Infrastructure Layer
           </span>
           <h2 className="text-3xl font-medium text-white mb-4">
-            Request Early Access
+            Founding Partner Interest
           </h2>
           <p className="text-zinc-400">
-            Early access is limited to aligned participants: merchants,
-            institutional operators, and economic builders.
+            SIIPs is forming its initial ecosystem of Founding Participation Partners.<br />
+            This program is designed for businesses, operators, and institutions who wish
+            to participate in the creation of a new economic infrastructure layer focused
+            on participation, retention, and long-term circulation.
+            <br />
+            Participation is selective and alignment-led
           </p>
         </motion.div>
 
@@ -350,14 +354,14 @@ export function EarlyAccessForm() {
 
                   <div className="space-y-2 md:col-span-2">
                     <label className="text-xs font-medium text-zinc-400 uppercase tracking-wider">
-                      Short Note
+                      Short Note (Optional)
                     </label>
                     <textarea
                       value={formData.short_note}
                       onChange={handleChange("short_note")}
                       className="flex min-h-35 w-full border border-zinc-800 bg-zinc-950 px-4 py-3 text-sm text-zinc-100 ring-offset-black placeholder:text-zinc-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/30 disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
                       placeholder="Share context on your focus or what you are seeking."
-                      required
+                      // required
                     />
                   </div>
                 </div>
