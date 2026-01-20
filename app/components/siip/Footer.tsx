@@ -1,5 +1,6 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="border-t border-zinc-900 bg-black">
@@ -30,10 +31,10 @@ export function Footer() {
                 Signals
               </Link>
               <Link
-                href="/#early-access"
+                href="/#founding-partner-interest"
                 className="text-sm text-zinc-400 hover:text-zinc-100 transition-colors"
               >
-                Early Access
+                Founding Partner Interest
               </Link>
             </nav>
           </div>

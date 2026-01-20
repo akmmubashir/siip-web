@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 export function HeroSection() {
   const scrollToEarlyAccess = () => {
-    document.getElementById("early-access")?.scrollIntoView({
+    document.getElementById("founding-partner-interest")?.scrollIntoView({
       behavior: "smooth",
     });
   };
@@ -55,7 +55,7 @@ export function HeroSection() {
               className="cursor-pointer h-12 px-8 text-base"
               onClick={scrollToEarlyAccess}
             >
-              Request Early Access
+              Founding Partner Interest
             </Button>
             <Link href="/doctrine">
               <Button

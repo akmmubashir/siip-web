@@ -69,7 +69,7 @@ export function EarlyAccessForm() {
   };
   return (
     <section
-      id="early-access"
+      id="founding-partner-interest"
       className="px-6 py-20 md:px-12 lg:px-24 bg-zinc-950"
     >
       <div className="max-w-4xl mx-auto">
