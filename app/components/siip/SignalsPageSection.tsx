@@ -6,6 +6,11 @@ import Link from "next/link";
 import { signals } from "@/app/data/signals";
 
 const SignalsPageSection = () => {
+  // Sort signals by date (latest first)
+  const sortedSignals = [...signals].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
+
   return (
     <main className="min-h-screen bg-black text-zinc-50 selection:bg-zinc-800 selection:text-white">
       <article className="pt-32 pb-24 px-6 md:px-12">
@@ -37,7 +42,7 @@ const SignalsPageSection = () => {
 
           {/* Posts List */}
           <div className="space-y-6">
-            {signals.map((signal, index) => (
+            {sortedSignals.map((signal, index) => (
               <motion.div
                 key={signal.id}
                 initial={{

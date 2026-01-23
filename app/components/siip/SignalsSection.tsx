@@ -6,6 +6,11 @@ import { Button } from "../ui/Button";
 import Link from "next/link";
 import { signals } from "@/app/data/signals";
 export function SignalsSection() {
+  // Sort signals by date (latest first)
+  const sortedSignals = [...signals].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
+
   return (
     <section className="px-6 py-24 md:px-12 lg:px-24 border-b border-zinc-900">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -62,7 +67,7 @@ export function SignalsSection() {
           className="flex flex-col justify-center"
         >
           <ul className="space-y-6">
-            {signals.slice(0, 3).map((item, i) => (
+            {sortedSignals.slice(0, 3).map((item, i) => (
               <li key={i} className="group cursor-pointer">
                 <Link
                   href={`/signals/${item.slug}`}
@@ -75,7 +80,7 @@ export function SignalsSection() {
                 </Link>
               </li>
             ))}
-            {signals.length > 3 && (
+            {sortedSignals.length > 3 && (
               <li className="text-center mt-4 group">
                 <Link
                   href="/signals"

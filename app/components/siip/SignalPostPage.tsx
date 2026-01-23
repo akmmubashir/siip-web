@@ -10,7 +10,12 @@ type Props = {
 };
 
 const SignalPostPage = ({ signal: slug }: Props) => {
-  const signal = signals.find((s) => s.slug === slug);
+  // Sort signals by date (latest first)
+  const sortedSignals = [...signals].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
+
+  const signal = sortedSignals.find((s) => s.slug === slug);
 
   if (!signal) {
     return (
@@ -26,11 +31,13 @@ const SignalPostPage = ({ signal: slug }: Props) => {
       </main>
     );
   }
-  // Find previous and next signals
-  const currentIndex = signals.findIndex((s) => s.slug === slug);
-  const prevSignal = currentIndex > 0 ? signals[currentIndex - 1] : null;
+  // Find previous and next signals based on sorted order
+  const currentIndex = sortedSignals.findIndex((s) => s.slug === slug);
+  const prevSignal = currentIndex > 0 ? sortedSignals[currentIndex - 1] : null;
   const nextSignal =
-    currentIndex < signals.length - 1 ? signals[currentIndex + 1] : null;
+    currentIndex < sortedSignals.length - 1
+      ? sortedSignals[currentIndex + 1]
+      : null;
   return (
     <main className="min-h-screen bg-black text-zinc-50 selection:bg-zinc-800 selection:text-white">
       <article className="pt-32 pb-24 px-6 md:px-12">
