@@ -11,7 +11,7 @@ export const signals: Signal[] = [
     id: "1",
     slug: "why-participation-must-become-infrastructure",
     title: "Why Participation Must Become Infrastructure",
-    date: "2024-01-15",
+    date: "2026-01-20",
     excerpt:
       "Modern economies reward scale, optimise payments, and accelerate capital. Yet they do not measure participation.",
     body: `Modern economies reward scale, optimise payments, and accelerate capital. Yet they do not measure participation.
@@ -26,7 +26,7 @@ This is the premise on which SIIPs is being built.`,
     id: "2",
     slug: "vat-visibility-as-economic-clarity",
     title: "VAT Visibility as Economic Clarity",
-    date: "2024-01-08",
+    date: "2026-01-20",
     excerpt:
       "VAT is one of the most important instruments of national participation. Yet consumers rarely see their contribution.",
     body: `VAT is one of the most important instruments of national participation. Yet consumers rarely see their contribution.
@@ -34,6 +34,55 @@ This is the premise on which SIIPs is being built.`,
 By making VAT visible inside participation flows, individuals understand not only what they spend, but how they contribute to the economy.
 
 Participation begins with transparency.`,
+  },
+  {
+    id: "3",
+    slug: "siips-is-not-built-for-quarters-it-is-built-for-decades",
+    title: "SIIPs is not built for quarters. It is built for decades",
+    date: "2026-01-23",
+    excerpt:
+      "SIIPs is designed as long-term economic infrastructure, not a short-term venture.",
+    body: `SIIPs is designed as long-term economic infrastructure, not a short-term venture.
+
+    Our architecture, governance, and neutrality principles exist to ensure stability across
+generations, not growth spikes across funding cycles.
+
+We optimise for endurance, not acceleration.`,
+  },
+  {
+    id: "4",
+    slug: "in-siips-value-is-not-rewarded-it-is-positioned",
+    title: "In SIIPs, value is not rewarded. It is positioned",
+    date: "2026-01-23",
+    excerpt: "SIIPs does not distribute rewards, cashback, or incentives.",
+    body: `SIIPs does not distribute rewards, cashback, or incentives.
+Instead, it builds long-term economic position through verified participation.
+
+Position compounds.
+Perks disappear.
+
+This is the foundation of a stable participation economy.
+`,
+  },
+  {
+    id: "5",
+    slug: "siips-does-not-optimise-for-profit-it-optimises-for-neutrality-integrity-and-stability",
+    title:
+      "SIIPs does not optimise for profit. It optimises for neutrality, integrity, and stability.",
+    date: "2026-01-23",
+    excerpt:
+      "SIIPs is structurally prohibited from extraction, commissions, consumer fees, and incentive distortion.",
+    body: `SIIPs is structurally prohibited from extraction, commissions, consumer fees, and incentive
+distortion.
+
+- We do not interfere with payments.
+
+- We do not bias circulation.
+
+- We do not sell attention or data.
+
+Our only mandate is to preserve a neutral, trusted participation layer for the economy.
+`,
   },
 ];
 export function getSignalBySlug(slug: string): Signal | undefined {

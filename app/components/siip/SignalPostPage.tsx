@@ -28,9 +28,9 @@ const SignalPostPage = ({ signal: slug }: Props) => {
   }
   // Find previous and next signals
   const currentIndex = signals.findIndex((s) => s.slug === slug);
-  const prevSignal =
+  const prevSignal = currentIndex > 0 ? signals[currentIndex - 1] : null;
+  const nextSignal =
     currentIndex < signals.length - 1 ? signals[currentIndex + 1] : null;
-  const nextSignal = currentIndex > 0 ? signals[currentIndex - 1] : null;
   return (
     <main className="min-h-screen bg-black text-zinc-50 selection:bg-zinc-800 selection:text-white">
       <article className="pt-32 pb-24 px-6 md:px-12">

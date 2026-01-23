@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "../ui/Button";
 import Link from "next/link";
+import { signals } from "@/app/data/signals";
 export function SignalsSection() {
   return (
     <section className="px-6 py-24 md:px-12 lg:px-24 border-b border-zinc-900">
@@ -61,16 +62,7 @@ export function SignalsSection() {
           className="flex flex-col justify-center"
         >
           <ul className="space-y-6">
-            {[
-              {
-                title: "Why participation must become infrastructure",
-                slug: "why-participation-must-become-infrastructure",
-              },
-              {
-                title: "VAT visibility as economic clarity",
-                slug: "vat-visibility-as-economic-clarity",
-              },
-            ].map((item, i) => (
+            {signals.slice(0, 3).map((item, i) => (
               <li key={i} className="group cursor-pointer">
                 <Link
                   href={`/signals/${item.slug}`}
@@ -83,6 +75,19 @@ export function SignalsSection() {
                 </Link>
               </li>
             ))}
+            {signals.length > 3 && (
+              <li className="text-center mt-4 group">
+                <Link
+                  href="/signals"
+                  className="flex items-baseline justify-between border-b border-zinc-900 pb-4 group-hover:border-zinc-700 transition-colors"
+                >
+                  <span className="text-lg text-zinc-300 group-hover:text-white transition-colors">
+                    View more signals
+                  </span>
+                  <ArrowUpRight className="h-4 w-4 text-zinc-600 group-hover:text-white transition-colors opacity-0 group-hover:opacity-100" />
+                </Link>
+              </li>
+            )}
           </ul>
         </motion.div>
       </div>
