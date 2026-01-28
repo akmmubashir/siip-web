@@ -167,7 +167,7 @@ const DoctrineSection = () => {
                   }}
                   className="flex flex-col gap-4"
                 >
-                  <div className="flex items-center gap-6 group">
+                  <div className="flex max-md:flex-col items-center max-md:items-start gap-6 max-md:gap-1 group">
                     <span className="text-5xl md:text-6xl font-light text-zinc-800 group-hover:text-zinc-700 transition-colors tabular-nums">
                       {String(index + 1).padStart(2, "0")}
                     </span>
