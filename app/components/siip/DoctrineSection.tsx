@@ -5,11 +5,56 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 const principles = [
-  "Participation over extraction",
-  "Circulation over accumulation",
-  "Position over perks",
-  "Architecture over features",
-  "Stability over speculation",
+  {
+    id: 1,
+    title: "Participation over extraction",
+    desc: `Most economic systems extract value from activity.
+SIIPs does not.\n 
+Every verified transaction is recorded as a participation event, not a monetisation opportunity.
+SIIPs never charges per transaction, per event, or per volume.\n 
+Participation is preserved as economic truth,
+not extracted as fees, commissions, or margins.`,
+  },
+  {
+    id: 2,
+    title: "Circulation over accumulation",
+    desc: `Healthy economies depend on circulation, not concentration.\n 
+When participation is not recorded, value accumulates silently and continuity weakens.
+SIIPs maintains a persistent record of participation across consumers, merchants, locations, and
+time without privileging spend, scale, or frequency.\n 
+Circulation is allowed to emerge naturally, not engineered.`,
+  },
+  {
+    id: 3,
+    title: "Position over perks",
+    desc: `Economic position without outcome is invisible.
+Privilege without structure is unstable.\n
+SIIPs establishes economic position through verified participation history — based on continuity,
+longevity, and integrity, not purchasing power.\n
+This position may translate into privileges, surfaced through the SIIPs platform as participationbased eligibility signals.
+The form, value, and execution of any privilege are defined independently by participating
+merchants or institutions.
+SIIPs does not mandate, fund, price, or guarantee privileges.\n
+Privilege follows participation.
+It is never used to engineer behaviour.`,
+  },
+  {
+    id: 4,
+    title: "Architecture over features",
+    desc: `SIIPs is not a loyalty programme, a marketing system, or a payment layer.\n
+It is a participation infrastructure layer that operates alongside existing financial systems without
+interfering in pricing, settlement, or taxation.\n
+The system is designed to be minimal, neutral, and long-lived supporting recognition and privilege structurally, not tactically.`,
+  },
+  {
+    id: 5,
+    title: "Stability over speculation",
+    desc: `Short-term incentives distort long-term systems.\n
+SIIPs favours continuity over spikes, longevity over bursts, and trust over speed.\n
+Participation accrues over time.
+Privileges strengthen gradually.
+Stability is prioritised over rapid expansion.`,
+  },
 ];
 
 const DoctrineSection = () => {
@@ -42,6 +87,9 @@ const DoctrineSection = () => {
           </motion.div>
 
           {/* Body Content */}
+          <h2 className="text-xl font-medium md:text-2xl text-zinc-500 mb-4">
+            Why SIIPs Exists
+          </h2>
           <motion.div
             initial={{
               opacity: 0,
@@ -56,21 +104,27 @@ const DoctrineSection = () => {
               delay: 0.2,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="space-y-8 mb-20"
+            className="space-y-6 mb-20"
           >
             <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
-              SIIPs exists to institutionalise participation as infrastructure.
-              Modern economies move capital efficiently, yet they fail to return
-              structural position to the individuals who generate economic flow.
+              Modern economies are efficient at moving money. They are not
+              designed to recognise participation.
             </p>
 
             <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
-              Transactions end value. Participation disappears. Over time, value
-              concentrates and stability weakens.
+              Transactions conclude at settlement. Participation disappears.
+              Over time, capital remains visible, but contributors do not.
             </p>
 
             <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
               This is not a market failure. It is an architectural omission.
+            </p>
+
+            <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              SIIPs exists to institutionalise participation as infrastructure -
+              so that participation is recorded, recognised, and allowed to
+              translate into real economic outcomes without extraction or
+              manipulation
             </p>
           </motion.div>
 
@@ -111,14 +165,24 @@ const DoctrineSection = () => {
                     delay: 0.6 + index * 0.15,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="flex items-start gap-6 group"
+                  className="flex flex-col gap-4"
                 >
-                  <span className="text-5xl md:text-6xl font-light text-zinc-800 group-hover:text-zinc-700 transition-colors tabular-nums">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="text-2xl md:text-3xl font-light text-white pt-2 leading-tight">
-                    {principle}
-                  </p>
+                  <div className="flex items-center gap-6 group">
+                    <span className="text-5xl md:text-6xl font-light text-zinc-800 group-hover:text-zinc-700 transition-colors tabular-nums">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <p className="text-2xl md:text-3xl font-light text-white pt-2 leading-tight">
+                      {principle.title}
+                    </p>
+                  </div>
+                  <div className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
+                    {principle.desc?.split("\n").map((line, idx) => (
+                      <React.Fragment key={idx}>
+                        {line}
+                        {idx < principle.desc.split("\n").length - 1 && <br />}
+                      </React.Fragment>
+                    ))}
+                  </div>
                 </motion.div>
               ))}
             </div>
