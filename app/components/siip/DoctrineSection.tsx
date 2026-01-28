@@ -208,21 +208,21 @@ const DoctrineSection = () => {
               Participation Recognition Boundary
             </h2>
             <div className="space-y-8">
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 SIIPs does not provide rewards, discounts, or financial benefits
               </p>
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 It records and signals verified participation.
               </p>
 
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 Any priority, pricing preference, or commercial recognition that
                 arises from participation status is determined independently by
                 participating merchants or institutions, at their discretion,
                 outside the SIIPs system.
               </p>
 
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 SIIPs remains neutral at all times.
               </p>
             </div>
@@ -247,7 +247,7 @@ const DoctrineSection = () => {
               Final Statement
             </h2>
             <div className="space-y-8">
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 SIIPs is not a product.
                 <br />
                 It is not a programme.
@@ -255,12 +255,12 @@ const DoctrineSection = () => {
                 It is not a rewards system
               </p>
 
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 It is participation infrastructure designed to make
                 participation visible, recognition legitimate, and privilege a
                 natural consequence of contribution.
               </p>
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-300/70 leading-relaxed">
                 Infrastructure must be neutral.
                 <br />
                 Infrastructure must be trusted.
