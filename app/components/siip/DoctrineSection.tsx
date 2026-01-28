@@ -188,6 +188,45 @@ const DoctrineSection = () => {
             </div>
           </motion.div>
 
+          {/* Statement */}
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 1.5,
+            }}
+            className="space-y-8 py-12 border-t border-zinc-900"
+          >
+            <h2 className="text-xl font-medium md:text-2xl text-zinc-200 mb-4">
+              Participation Recognition Boundary
+            </h2>
+            <div className="space-y-8">
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                SIIPs does not provide rewards, discounts, or financial benefits
+              </p>
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                It records and signals verified participation.
+              </p>
+
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                Any priority, pricing preference, or commercial recognition that
+                arises from participation status is determined independently by
+                participating merchants or institutions, at their discretion,
+                outside the SIIPs system.
+              </p>
+
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                SIIPs remains neutral at all times.
+              </p>
+            </div>
+          </motion.div>
           {/* Closing Statement */}
           <motion.div
             initial={{
@@ -204,26 +243,32 @@ const DoctrineSection = () => {
             }}
             className="space-y-8 pt-12 border-t border-zinc-900"
           >
-            <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
-              We are not building a loyalty initiative. We are not launching a
-              marketing platform. We are not replacing payments.
-            </p>
+            <h2 className="text-xl font-medium md:text-2xl text-zinc-200 mb-4">
+              Final Statement
+            </h2>
+            <div className="space-y-8">
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                SIIPs is not a product.
+                <br />
+                It is not a programme.
+                <br />
+                It is not a rewards system
+              </p>
 
-            <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
-              We are designing a participation layer: an economic architecture
-              where every verified transaction becomes a participation event,
-              where merchants gain retention infrastructure, and where
-              individuals gain visible economic presence without financial
-              manipulation, without consumer fees, and without interference in
-              settlement or tax.
-            </p>
-
-            <p className="text-xl md:text-2xl text-white leading-relaxed font-light pt-8">
-              This is infrastructure. And infrastructure must be governed by
-              doctrine.
-            </p>
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                It is participation infrastructure designed to make
+                participation visible, recognition legitimate, and privilege a
+                natural consequence of contribution.
+              </p>
+              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed">
+                Infrastructure must be neutral.
+                <br />
+                Infrastructure must be trusted.
+                <br />
+                Infrastructure must endure.
+              </p>
+            </div>
           </motion.div>
-
           {/* Back Link */}
           <motion.div
             initial={{
