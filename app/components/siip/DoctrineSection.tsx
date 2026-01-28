@@ -29,9 +29,9 @@ Circulation is allowed to emerge naturally, not engineered.`,
     title: "Position over perks",
     desc: `Economic position without outcome is invisible.
 Privilege without structure is unstable.\n
-SIIPs establishes economic position through verified participation history — based on continuity,
+SIIPs establishes economic position through verified participation history based on continuity,
 longevity, and integrity, not purchasing power.\n
-This position may translate into privileges, surfaced through the SIIPs platform as participationbased eligibility signals.
+This position may translate into privileges, surfaced through the SIIPs platform as participation based eligibility signals.\n
 The form, value, and execution of any privilege are defined independently by participating
 merchants or institutions.
 SIIPs does not mandate, fund, price, or guarantee privileges.\n
